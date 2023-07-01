@@ -36,35 +36,54 @@
     </header>
     <main>
      <section class="site-filters">
-      <h2>Гостиницы Седоны</h2>
-      <select name="hotel">
-        <option value="name one">Название 1</option>
-        <option value="name twu">Название 2</option>
-      </select>
-      <h3>Гостиница</h3>
+      <h1>Гостиницы Седоны</h1>
+      <ul class="site-tree-list">
+        <li class="site-tree-item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="site-tree-item">
+          <a href="#">О седоне</a>
+        </li>
+        <li class="site-tree-item">
+          <a href="#">Гостиницы</a>
+        </li>
+      </ul>
 
-      <h3>Инфраструктура:</h3>
-      <input type="checkbox" name="pool" id="pool-checkbox" checked>
-      <label for="pool-checkbox">Бассейн</label>
-      <br>
-      <input type="checkbox" name="parking" id="parking-checkbox" checked>
-      <label for="parking-checkbox">Парковка</label>
-      <br>
-      <input type="checkbox" name="wi-fi" id="wi-fi-checkbox" checked>
-      <label for="wi-fi-checkbox">Wi-Fi</label>
 
-      <h3>Тип жилья:</h3>
-      <label>
-        <input type="radio" name="type" value="h">Гостиница
-      </label>
-      <br>
-      <label>
-        <input type="radio" name="type" value="m">Мотель
-      </label>
-      <br>
-      <label>
-        <input type="radio" name="type" value="a">Апартаменты
-      </label>
+      <form action="https://echo.htmlacademy.ru" method="">
+        <h2>Инфраструктура:</h2>
+        <input type="checkbox" name="pool" id="pool-checkbox">
+        <label for="pool-checkbox">Бассейн</label>
+        <br>
+        <input type="checkbox" name="parking" id="parking-checkbox">
+        <label for="parking-checkbox">Парковка</label>
+        <br>
+        <input type="checkbox" name="wi-fi" id="wi-fi-checkbox">
+        <label for="wi-fi-checkbox">Wi-Fi</label>
+
+        <h2>Тип жилья:</h2>
+        <label>
+          <input type="radio" name="type" value="h">Гостиница
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="type" value="m">Мотель
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="type" value="a">Апартаменты
+        </label>
+
+        <h2>Стоимость, ₽:</h2>
+        <label for="id-price-min">Стоимость min</label>
+        <input type="text" name="price-min" id="id-price-min">
+        <label for="id-price-max">Стоимость min</label>
+        <input type="text" name="price-max" id="id-price-max">
+
+        <input type="submit" value="Применить">
+        <input type="reset" value="Сбросить">
+
+      </form>
      </section>
     </main>
 
