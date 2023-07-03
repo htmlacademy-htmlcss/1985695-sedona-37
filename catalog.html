@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Седона - каталог гостиниц</title>
+  </head>
+  <body>
+    <!-- Шапка каталога -->
+    <header>
+      <a href="#"
+      ><img src="#" width="70" height="30" alt="логотип Седона"
+      /></a>
+      <navclass="main-header-nav">
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#">О седоне</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="site-search">
+        <li class="site-search-item">
+          <a href="#">Поиск</a>
+        </li>
+        <li class="site-search-item">
+          <a href="#">в избранном</a>
+        </li>
+        <li class="site-search-item">
+          <button type="button">ХОЧУ СЮДА</button>
+        </li>
+      </ul>
+    </header>
+    <main>
+     <!-- Секция фильтров -->
+      <section class="site-filters">
+      <h1>Гостиницы Седоны</h1>
+      <ul class="site-tree-list">
+        <li class="site-tree-item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="site-tree-item">
+          <a href="#">О седоне</a>
+        </li>
+        <li class="site-tree-item">
+          <a href="#">Гостиницы</a>
+        </li>
+      </ul>
+
+      <form action="https://echo.htmlacademy.ru" method="">
+        <h2>Инфраструктура:</h2>
+        <input type="checkbox" name="pool" id="pool-checkbox">
+        <label for="pool-checkbox">Бассейн</label>
+        <br>
+        <input type="checkbox" name="parking" id="parking-checkbox">
+        <label for="parking-checkbox">Парковка</label>
+        <br>
+        <input type="checkbox" name="wi-fi" id="wi-fi-checkbox">
+        <label for="wi-fi-checkbox">Wi-Fi</label>
+
+        <h2>Тип жилья:</h2>
+        <label>
+          <input type="radio" name="type" value="h">Гостиница
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="type" value="m">Мотель
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="type" value="a">Апартаменты
+        </label>
+
+        <h2>Стоимость, ₽:</h2>
+        <label for="id-price-min">Стоимость min</label>
+        <input type="text" name="price-min" id="id-price-min">
+        <label for="id-price-max">Стоимость min</label>
+        <input type="text" name="price-max" id="id-price-max">
+
+        <input type="submit" value="Применить">
+        <input type="reset" value="Сбросить">
+      </form>
+     </section>
+     <!-- Коталог гостиниц в виде плиток -->
+     <section class="hotel-catalog">
+      <h2>Найдено гостиниц: 38</h2>
+      <br>
+      <select class="select-control" aria-label="Сортировка">
+        <option value="cheap">Сначала дешёвое</option>
+        <option value="popular">Сначала популярное</option>
+        <option value="expensive">Сначала дорогое</option>
+      </select>
+      <br>
+      <br>
+      <!-- Плитка каталога 1-->
+      <article class="hotel-catalog-tile">
+        <a href="#"><img src="#" alt="Звёздное небо в ущелье"></a>
+        <h3>Amara Resort & Spa</h3>
+        <p>Гостиница</p>
+        <p>От 4000 ₽</p>
+        <a href="#">Подробнее</a>
+        <button class="button-tile" type="button">В избранное</button>
+        <p>4/5</p>
+        <p>Рейтинг: 8,5</p>
+      </article>
+      <br>
+      <br>
+      <!-- Плитка каталога 2-->
+      <article class="hotel-catalog-tile">
+        <a href="#"><img src="#" alt="Радуга и каньон на закате"></a>
+        <h3>Villas at Poco Diablo</h3>
+        <p>Гостиница</p>
+        <p>От 5000 ₽</p>
+        <a href="#">Подробнее</a>
+        <button class="button-tile" type="button">В избранное</button>
+        <p>4/5</p>
+        <p>Рейтинг: 9,2</p>
+      </article>
+      <!-- Плитка каталога 3-->
+      <article class="hotel-catalog-tile">
+        <a href="#"><img src="#" alt="Коньон на фоне голубого неба"></a>
+        <h3>Desert Quail Inn</h3>
+        <p>Гостиница</p>
+        <p>От 2500 ₽</p>
+        <a href="#">Подробнее</a>
+        <button class="button-tile" type="button">В избранное</button>
+        <p>3/5</p>
+        <p>Рейтинг: 6,9</p>
+      </article>
+      <!-- Плитка каталога 4-->
+      <article class="hotel-catalog-tile">
+        <a href="#"><img src="#" alt="Коньон на фоне звёздного неба"></a>
+        <h3>GreenTree Inn</h3>
+        <p>Гостиница</p>
+        <p>От 1500 ₽</p>
+        <a href="#">Подробнее</a>
+        <button class="button-tile" type="button">В избранное</button>
+        <p>2/5</p>
+        <p>Рейтинг: 5,0</p>
+      </article>
+      <ul class="marker-list">
+        <li class="marker-item"><a href="#">1</a></li>
+        <li class="marker-item"><a href="#">2</a></li>
+        <li class="marker-item"><a href="#">3</a></li>
+        <li class="marker-item"><a href="#">4</a></li>
+        <li class="marker-item"><a href="#">...</a></li>
+        <li class="marker-item"><a href="#">10</a></li>
+      </ul>
+     </section>
+     <section class="subscription-form">
+      <label for="user-email-field">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      </label>
+      <form action="https://echo.htmlacademy.ru">
+        <input type="email" placeholder="Ваш e-mail" id="user-email-field" name="email">
+        <input type="submit" value="Подписаться">
+      </form>
+    </section>
+    </main>
+    <footer>
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a href="#"
+            ><img src="img/empty.svg" width="70" height="30" alt="ВКонтакте"
+          /></a>
+        </li>
+        <li class="social-list-item">
+          <a href="#"
+            ><img src="img/empty.svg" width="70" height="30" alt="Telegram"
+          /></a>
+        </li>
+        <li class="social-list-item">
+          <a href="#"
+            ><img src="img/empty.svg" width="70" height="30" alt="YouTube"
+          /></a>
+        </li>
+      </ul>
+      <span>
+        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </span>
+      <a href="#"
+      ><img src="#" width="70" height="30" alt="логотип HTML academy"
+      /></a>
+    </footer>
+  </body>
+</html>
