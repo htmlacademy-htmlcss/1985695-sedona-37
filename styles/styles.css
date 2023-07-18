@@ -30,18 +30,43 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 /* Параметры текста сайта*/
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
+  background-color: #f2f2f2;
+}
+
+.container-site {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
 }
 
-.visually-hidden {
-  position: fixed;
-  transform: scale(0);
+.container-logotype {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  padding-right: 30px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.visibility-hidden {
+  visibility: hidden;
 }
 
 /* Хедер*/
@@ -51,13 +76,34 @@ body {
   background-color: #ffffff;
 }
 
-.site-navigation,
-.site-search {
-  list-style-type: none;
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 1060px;
+  margin: 0 70px;
+}
+
+.navigation-list {
+  display: flex;
+  width: 464px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: auto;
+}
+
+.navigation-user-list {
+  display: flex;
+  width: 312px;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  list-style: none;
 }
 
 .navigation-link,
-.search-link {
+.navigation-user-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -68,7 +114,19 @@ body {
   background-color: #ffffff;
 }
 
-.button {
+.enumerator {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  background: #7db54f;
+}
+
+.button-user {
+  font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
@@ -78,16 +136,26 @@ body {
 }
 
 /* Герой */
+.main-container {
+  margin: 0;
+  padding: 0;
+}
+
 .hero {
+  margin: 0;
+  padding: 0;
   background-image: url(../images/background/index-background.jpg);
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-color: #82b3d3;
   color: #ffffff;
-  background-size: 100% auto;
-  text-align: center;
 }
 
-/* Приимущества */
+.sedona-hero-img {
+  display: block;
+  margin: 0 auto;
+}
+
 .slogan {
   font-size: 30px;
   font-weight: 700;
@@ -102,8 +170,28 @@ body {
   line-height: 26px;
 }
 
+/* Приимущества */
+.advantages-section {
+}
+
 .advantages-list {
-  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-item {
+  box-sizing: border-box;
+  width: 400px;
+  height: 385px;
+  padding: 103px 85px;
+}
+
+.advantages-item-img {
+  width: 800px;
+  height: 385px;
 }
 
 .advantages-title {
@@ -137,6 +225,19 @@ body {
 }
 
 /* Сервис */
+.services-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item {
+  box-sizing: border-box;
+  width: 400px;
+  height: 385px;
+  padding: 80px 85px;
+}
+
 .services-call {
   font-size: 30px;
   font-weight: 700;
@@ -461,10 +562,11 @@ body {
 }
 
 .input-email-catalog {
+  padding: 12px 20px;
   display: flex;
   border: 0;
   width: 452px;
-  height: 52px;
+  height: 28px;
   border-radius: 4px 0 0 4px;
   background-color: #f2f2f2;
   color: #000000;
@@ -474,6 +576,7 @@ body {
 }
 
 .input-button-catalog {
+  padding: 8px 50px;
   border: 0;
   border-radius: 0 4px 4px 0;
   display: flex;
@@ -487,4 +590,9 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.subscription-input {
+  display: flex;
+  justify-content: center;
 }
